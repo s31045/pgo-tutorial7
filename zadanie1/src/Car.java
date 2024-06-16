@@ -10,11 +10,11 @@ public class Car implements Comparable<Car>{
 
     @Override
     public int compareTo(Car o) {
-       return model.compareTo(o.model);
+       return Integer.compare(year,o.year);
     }
 
     //public int compareTo(Car o) {
-    //    return Integer.compare(year,o.year);
+    //    return model.compareTo(o.model);
     //}
 
 }
